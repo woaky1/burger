@@ -7,6 +7,11 @@ var PORT = process.env.PORT || 3001
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+
+var routes = require("./controllers/burger_controller");
+
+app.use(routes);
+
 app.listen(PORT, function () {
     console.log("App listening on PORT: " + PORT);
 });

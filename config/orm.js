@@ -32,7 +32,7 @@ function objToSql(ob) {
 }
 
 var orm = {
-    all: function (){
+    all: function (tableInput, cb){
         var queryString = "SELECT * FROM " + tableInput + ";";
         connection.query(queryString, function(err, result) {
           if (err) {
@@ -82,4 +82,4 @@ var orm = {
     }
 }
 
-module.exports = orm;
+module.exports = orm;  

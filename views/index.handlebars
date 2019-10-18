@@ -2,10 +2,47 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-med-12">
+        <div class="col-md-5"></div>
+        <div class="col-med-2 text-center text-danger">
             <h1>Eat</h1>
             <h1>Da</h1>
-            <h1><i class="fa fa-bars" aria-hidden="true"></i></h1>
+            <h1>BURGER!!!</h1>
         </div>
+        <div class="col-md-5"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <h2>To Devour</h2>
+            <ul>
+            {{#each burgers}}
+                {{#unless devoured}}
+                {{> burgers/burger-block devoured=false}}
+                {{/unless}}
+            {{/each}}
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <h2>Devoured</h2>
+            <ul>
+            {{#each burgers}}
+                {{#if devoured}}
+                <li>{{burger_name}}</li>
+                {{/if}}
+            {{/each}}
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-5"></div>
+        <div class="col-med-2">
+            <form>
+                <div class="form-group text-center">
+                    <textarea class="form-control" id="dreamBurger" rows="3"></textarea>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <p>Enter a burger you'd like to eat.</p>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-5"></div>
     </div>
 </div>

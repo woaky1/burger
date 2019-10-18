@@ -1,0 +1,12 @@
+body {
+    background-color: #ebba34;
+}
+
+h1 {
+    font-family: 'Modak', cursive;
+}
+
+textarea {
+    resize: none;
+    width: 100;
+}

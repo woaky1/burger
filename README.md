@@ -28,8 +28,8 @@ This app is organized in an MVC type fashion.
 
 ## Tech Used
 Actually, it took a fair amount of tech to get this simple app up and running.
-* On the front end, I'm using some bootstrap to help with styling.
-* On the back end, I'm using several node modules, including express and express handlebars to help with passing data to the front end, as well as mysql to communicate with the database.
+* On the front end, I'm using some Bootstrap to help with styling.
+* On the back end, I'm using several node modules, including Express.js and Express Handlebars to help with passing data to the front end, as well as mySQL to communicate with the database.
 * I've deployed the app using Heroku, and I'm also using JawsDB so that the database doesn't live on my laptop!
 
 ## About Me
